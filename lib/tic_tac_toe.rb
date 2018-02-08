@@ -96,7 +96,10 @@ class TicTacToe
       end
 
       def over?
-        @board.full? || @board.won? || @board.draw?
+        if @board.full? || @board.won? || @board.draw?
+          return true
+        else
+          false
       end
 
       def winner
