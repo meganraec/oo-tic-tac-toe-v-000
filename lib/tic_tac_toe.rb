@@ -115,7 +115,7 @@ class TicTacToe
         turn
         end
         if won?
-         puts "Congratulations #{winner}!"
+         puts "Congratulations #{@board[@win_combination[0]]}!"
         else draw?
         end
       end
