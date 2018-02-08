@@ -96,10 +96,7 @@ class TicTacToe
       end
 
       def over?
-        if @board.include?(" " || "")
-          return false
-        else true
-        end
+        @board.full? || @board.won? || @board.draw?
       end
 
       def winner
