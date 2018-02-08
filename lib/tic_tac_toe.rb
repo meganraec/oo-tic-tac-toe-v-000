@@ -113,7 +113,7 @@ class TicTacToe
           won?
         end
         if won?
-         puts "Congratulations #{@board[@win_combination[0]]}!"
+         puts "Congratulations #{@board[win_combination[0]]}!"
         else draw?
         end
       end
