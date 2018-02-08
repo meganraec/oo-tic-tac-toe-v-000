@@ -54,6 +54,7 @@ class TicTacToe
     else
     puts "invalid"
     turn
+    won?
   end
   end
 
