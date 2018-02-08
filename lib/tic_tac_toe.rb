@@ -96,7 +96,7 @@ class TicTacToe
       end
 
       def over?
-        return @board.full? || @board.won? || @board.draw?
+        return full? || won? || draw?
       end
 
       def winner
