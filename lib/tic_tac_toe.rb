@@ -52,15 +52,11 @@ class TicTacToe
       puts "invalid"
       input = gets.strip
       input = input_to_index(input)
-    end
-      # if !valid_move?(index)
-      # puts "invalid"
-      # input = gets.strip
-      # index = input_to_index(input)
-      # end
+    else
     move(index, current_player)
     display_board
     end
+  end
 
     def turn_count
       @board.count{|token| token == "X" || token == "O"}
