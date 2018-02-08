@@ -71,7 +71,7 @@ class TicTacToe
           (@board[win_combination[0]] == @board[win_combination[1]]) &&
           (@board[win_combination[1]] == @board[win_combination[2]]) &&
           (@board[win_combination[2]] == @board[win_combination[0]]))
-          # @win_combination = win_combination
+          @win_combination = win_combination
           return win_combination
           return true
         end
@@ -101,7 +101,7 @@ class TicTacToe
 
       def winner
         if won?
-          return @board[win_combination[0]]
+          return @board[@win_combination[0]]
         else
           return nil
         end
@@ -113,7 +113,7 @@ class TicTacToe
           won?
         end
         if won?
-         puts "Congratulations #{@board[win_combination[0]]}!"
+         puts "Congratulations #{@board[@win_combination[0]]}!"
         else draw?
         end
       end
