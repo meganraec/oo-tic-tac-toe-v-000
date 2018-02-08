@@ -53,6 +53,7 @@ class TicTacToe
     display_board
     else
     puts "invalid"
+    turn
     full?
     over?
     won?
