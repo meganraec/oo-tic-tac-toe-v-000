@@ -53,6 +53,8 @@ class TicTacToe
     display_board
     else
     puts "invalid"
+    input = gets.strip
+    index = input_to_index(input)
   end
   end
 
