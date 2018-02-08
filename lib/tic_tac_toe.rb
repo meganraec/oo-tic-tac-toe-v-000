@@ -118,9 +118,9 @@ class TicTacToe
         until over?
         turn
         end
-        #if won?
-        #  puts "Congratulations #{winner}!"
-        #else draw?
-        #end
+        if won?
+         puts "Congratulations #{winner}!"
+        else draw?
+        end
       end
 end
