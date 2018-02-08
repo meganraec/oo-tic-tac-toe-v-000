@@ -110,6 +110,7 @@ class TicTacToe
       def play
         while !over?
           turn
+          won?
         end
         if won?
          puts "Congratulations #{@board[@win_combination[0]]}!"
